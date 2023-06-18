@@ -24,6 +24,10 @@ Add `Authenticator` to the `authMethods` section of your `authenticator` compone
     'authMethods' => [
         [
             'class' => \roaresearch\yii2\cognito\Authenticator::class,
+            'userModelClass' => 'common\models\User',
+            'userPoolId' => '<userPoolId>',
+            'region' => '<region>',
+            'clientIds' => ['clientIds'],
         ],
         [
             'class' => \yii\filters\auth\HttpBearerAuth::class,
