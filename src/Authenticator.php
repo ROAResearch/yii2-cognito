@@ -14,7 +14,7 @@ class Authenticator extends AuthMethod
      * of the User model. This is necessary for the authentication process, as this class is used 
      * to instantiate User objects, retrieve existing users from the database, or register new users.
      *
-     * By default, the 'userModelClass' is set to 'common\models\User'. However, depending on your 
+     * By default, the 'userModelClass' is set to 'app\models\User'. However, depending on your 
      * application structure, you might need to modify this value. To use a different User model, 
      * simply assign the appropriate fully qualified class name to this variable.
      */
