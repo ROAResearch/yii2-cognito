@@ -1,0 +1,26 @@
+{
+    "name": "roaresearch/yii2-cognito",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2",
+        "yiisoft/yii2": "~2.0.48",
+        "teamgantt/juhwit": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "roaresearch\\yii2\\cognito\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Angel (Faryshta) Guevara",
+            "email": "angeldelcaos@gmail.com"
+        },
+        {
+            "name": "Carlos (neverabe) Llamosas",
+            "email": "cmllamosas@gmail.com"
+        }
+    ]
+}
