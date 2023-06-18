@@ -35,6 +35,7 @@ Add `Authenticator` to the `authMethods` section of your `authenticator` compone
         ],
     ],
 ]
+```
 
 ## Versioning
 
