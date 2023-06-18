@@ -28,23 +28,23 @@ class Authenticator extends AuthMethod
     public const URL_TEMPLATE = 'https://cognito-idp.REGION.amazonaws.com/USER_POOL_ID/.well-known/jwks.json';
 
     /**
-     * The 'userPoolId' is a protected string variable which represents the ID of the User Pool 
+     * The 'userPoolId' is a public string variable which represents the ID of the User Pool 
      * in AWS Cognito service. This value will replace the 'USER_POOL_ID' placeholder in the URL_TEMPLATE.
      */
-    protected string $userPoolId = '<userPoolId>';
+    public string $userPoolId = '<userPoolId>';
 
     /**
-     * The 'region' is a protected string variable that represents the AWS region 
+     * The 'region' is a public string variable that represents the AWS region 
      * where the Cognito service is hosted. This value will replace the 'REGION' placeholder in the URL_TEMPLATE.
      */
-    protected string $region = '<region>';
+    public string $region = '<region>';
 
     /**
-     * The 'clientIds' is a protected array which is designed to hold the client IDs 
+     * The 'clientIds' is a public array which is designed to hold the client IDs 
      * related to the AWS Cognito service. This could be used to validate tokens or 
      * for other AWS service interactions.
      */
-    protected array $clientIds = ['clientIds'];
+    public array $clientIds = ['clientIds'];
 
     /**
      * The 'pattern' is a public string variable used as a regex pattern. It is designed 
